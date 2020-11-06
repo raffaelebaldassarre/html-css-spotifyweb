@@ -50,6 +50,7 @@ aside.main_menu {
 }
 .logo {
   padding: 20px 0 0 20px;
+  cursor: pointer;
 }
 .logo > img {
   width: 70%;
@@ -66,16 +67,24 @@ aside.main_menu {
   align-items: center;
 }
 .home {
+  position: relative;
   margin: 30px 0;
 }
 .home li a {
   padding-left: 20px;
   height: 45px;
 }
-.home li a:hover {
-  color: white;
-  border-left: 3px solid #adff2f;
+.home li:hover{
+  transform: scale(1);
 }
+/* .home li a span::after{
+  position: absolute;
+  content: '';
+  height: 35px;
+  left: 0;
+  bottom:0;
+  border-left: 3px solid #adff2f;
+} */
 .home span {
   margin-left: 10px;
 }
@@ -128,7 +137,7 @@ aside.main_menu {
 }
 .username {
   border-top: 1px solid #a3a3a3;
- padding: 15px 15px 10px 0;
+  padding: 15px 15px 10px 0;
 }
 .username a {
   display: flex;
@@ -170,6 +179,7 @@ aside.main_menu {
   background-color: #00000087;
   justify-content: flex-end;
   align-items: center;
+  z-index: 1;
 }
 .subscribe {
   font-size: 0.8rem;
@@ -185,6 +195,9 @@ aside.main_menu {
   line-height: 0px;
   cursor: pointer;
 }
+.subscribe:hover{
+  transform: scale(1.1);
+}
 .covers_section nav{
   justify-content: center;
 }
@@ -192,13 +205,53 @@ nav a {
   margin: 25px 15px;
   color: #a3a3a3;
 }
-/* /COVERS SECTION */
+nav a:hover{
+  transform: scale(1.2);
+}
+/* nav a span::after{
+  position: absolute;
+  content: '';
+  width: 40%;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: 3px solid #adff2f;
+} */
 
 /* RECENTLY PLAYED SECTION */
 .covers_section h2 {
   font-size: 1.5rem;
   font-weight: 600;
 }
+/* OVERLAY */
+.card{
+  position: relative;
+}
+.plus_item{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 17px);
+  color: white;
+  background-color: black;
+  opacity: 0;
+}
+.overlay:hover{
+  opacity: 0.9;
+  cursor: pointer;
+}
+.plus_item .fa-play-circle{
+  font-size: 50px;
+}
+/* /OVERLAY */
 
 .item img {
   width: 100%;
@@ -223,6 +276,15 @@ nav a {
   font-size: 0.75rem;
   font-weight: 500;
 }
+
+.popular img{
+  border-radius: 50%;
+}
+.popular .overlay{
+  border-radius: 49%;
+}
+
+/* /COVERS SECTION */
 
 /* FOOTER */
 #site_footer {
