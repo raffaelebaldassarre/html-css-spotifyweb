@@ -4,23 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify clone</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <div class="wrapper d-flex">
         <main id="site_content" class="d-flex">
-            <aside class="main_menu">Sidebar</aside>
+
+            <aside class="main_menu d-flex">
+              <div class="main-top">
+                  <div class="logo">
+                  <img src="assets/img/logo.svg" alt="">
+                </div>
+                <div class="home">
+                    <ul>
+                      <li><a href="#"><img src="assets/img/home.svg" alt=""><span>Home</span></a></li>
+                      <li><a href="#"><img src="assets/img/search.svg" alt=""><span>Cerca</span></a></li>
+                      <li><a href="#"><img src="assets/img/libreria.svg" alt=""><span>La tua libreria</span></a></li>
+                    </ul>
+                  </div>
+                <div class="playlist">
+                    <h5>PLAYLIST</h5>
+                    <div class="crea-playlist"><a href=""> <i class="fas fa-plus-square"></i> <span>Crea Playlist</span> </a></div>
+                    <div class="nome-playlist">
+                      <ul>
+                        <li><a href="">Nome Playlist</a></li>
+                        <li><a href="">Nome Playlist</a></li>
+                        <li><a href="">Nome Playlist</a></li>
+                        <li><a href="">Nome Playlist</a></li>
+                        <li><a href="">Nome Playlist</a></li>
+                        <li><a href="">Nome Playlist</a></li>
+                        <li><a href="">Nome Playlist</a></li>
+                      </ul>
+                    </div>
+                  </div>
+              </div>
+              <div class="main-bottom">
+                <div class="sidebar-bottom">
+                  <div class="installa"><a href=""><img src="assets/img/download.svg" alt=""><span>Installa app</span></a></div>
+                  <div class="username"><a href="#"><img src="assets/img/profile.svg" alt=""><span>John Doe</span></a></div>
+                </div>
+              </div>
+            </aside>
+
             <section class="covers_section">
                 <div class="subscribe_banner">
-                    lorem
-                </div>   
+                    Lorem
+                </div>
 
                 <nav>
                      <a href="#">Lorem</a>
                      <a href="#">Lorem</a>
                      <a href="#">Lorem</a>
                      <a href="#">Lorem</a>
-                
+
                 </nav>
                 <h2>Recently played</h2>
                 <div id="recently_played" class="d-flex flex-wrap">
@@ -30,15 +69,25 @@
                     <div class="item"></div>
                     <div class="item"></div>
                     <div class="item"></div>
-
                 </div>
-                
-                <div id="created_for"></div>
-                <div id="popular"></div>
-                
 
+                <h2>Creato per John Doe</h2>
+                <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+                <div id="created_for" class="d-flex flex-wrap">
+                  <div class="item"></div>
+                  <div class="item"></div>
+                </div>
+
+                <h2>Artisti più popolari</h2>
+                <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+                <div id="popular" class="d-flex flex-wrap">
+                  <div class="item"></div>
+                  <div class="item"></div>
+                </div>
             </section>
+
         </main>
+
         <footer id="site_footer">
             <div class="player">player</div>
         </footer>

@@ -1,33 +1,155 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Utility classes */
+/* UTILITY CLASSES */
 .d-flex {
-    display: flex;
+  display: flex;
 }
 .flex-wrap {
-    flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+li {
+  list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+/* /UTILITY CLASSES */
+
 body {
-    background-color: #333;
-    color: white;
+  background-color: #333;
+  color: white;
+  font-family: "GothamPro";
+  font-size: 0.9rem;
+  font-weight: 300;
 }
 .wrapper {
-    height: 100vh;
-    flex-direction: column;
-    justify-content: space-between;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #site_content{
-    height: calc(100% - 60px);
+  height: calc(100% - 60px);
 }
+
 aside.main_menu {
-    min-width: 300px;
-    background-color: black;
+  min-width: 300px;
+  width: 300px;
+  background-color: black;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.logo {
+  padding: 15px;
+}
+.logo > img {
+  width: 70%;
+}
+
+.main-top a, .main-bottom a {
+  width: fit-content;
+}
+
+.main-top li img {
+  width: 30px;
+}
+
+.main-top li a {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.home {
+  margin: 30px 0;
+}
+
+.home li a {
+  padding-left: 15px;
+  height: 45px;
+}
+
+.home li a:hover {
+  border-left: 3px solid greenyellow;
+}
+
+.home span {
+  margin-left: 10px;
+}
+
+.playlist h5 {
+  font-size: 1.0rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+
+.crea-playlist, .nome-playlist {
+  margin-left: 15px;
+}
+
+.crea-playlist .fas {
+  font-size: 40px;
+  color: white;
+}
+
+.crea-playlist a {
+  display: flex;
+  align-items: center;
+}
+
+.crea-playlist span {
+  color: white;
+  margin-left: 10px;
+  font-size: 1rem;
+}
+
+.nome-playlist ul li {
+  margin: 20px 0;
+}
+
+.main-bottom {
+  padding: 15px 15px 0;
+}
+
+.installa a {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.installa img {
+  height: 15px;
+  margin-right: 10px;
+}
+
+.username {
+   border-top: 1px solid grey;
+   padding: 15px 15px 10px 0;
+}
+
+.username a {
+  display: flex;
+  align-items: center;
+}
+
+.username span {
+  font-size: 1.0rem;
+  font-weight: 600;
+  color: white;
+}
+
+.username img {
+  width: 25px;
+  background-color: grey;
+  border-radius: 100%;
+  margin-right: 10px;
 }
 
 .covers_section {
