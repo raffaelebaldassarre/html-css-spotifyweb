@@ -83,10 +83,11 @@ aside.main_menu {
 .home li a::after{
   position: absolute;
   content: '';
-  height: 35px;
+  height: 45px;
   left: 0;
   bottom:0;
-  border-left: 3px solid #adff2f;
+  border-left: 4px solid #adff2f;
+  border-radius: 10px;
   visibility: hidden;
 }
 .home li a:hover::after{
@@ -227,6 +228,7 @@ nav a span::after{
   left: 50%;
   transform: translateX(-50%);
   border-bottom: 3px solid #adff2f;
+  border-radius: 10px;
   visibility: hidden;
 }
 nav a span:hover::after{
