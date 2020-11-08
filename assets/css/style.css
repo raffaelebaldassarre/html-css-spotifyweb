@@ -204,20 +204,28 @@ aside.main_menu {
 nav a {
   margin: 25px 15px;
   color: #a3a3a3;
+  position: relative;
 }
 nav a:hover{
   transform: scale(1.2);
 }
-/* nav a span::after{
+nav a span::after{
   position: absolute;
   content: '';
+  clear: both;
+  display: table;
   width: 40%;
   bottom: -5px;
   left: 50%;
   transform: translateX(-50%);
   border-bottom: 3px solid #adff2f;
-} */
+  visibility: hidden;
+}
+nav a span:hover::after{
+  visibility: visible;
+}
 
+}
 /* RECENTLY PLAYED SECTION */
 .covers_section h2 {
   font-size: 1.5rem;
@@ -300,6 +308,19 @@ nav a:hover{
 .track {
   width: 17%;
   justify-content: space-between;
+  padding-left: 15px;
+}
+.track-title{
+  margin-left: 15px;
+  font-weight: 100;
+}
+.track-title h4:hover,.track-title p:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.track-title p{
+  margin-top: 5px;
+  color: #a3a3a3;
 }
 
 .track-cover {
@@ -308,7 +329,9 @@ nav a:hover{
 
 .track-cover img {
   height: 50px;
-  margin: 0 15px;
+}
+.track-cover img:hover{
+  cursor:pointer;
 }
 
 .track-fav {
@@ -318,6 +341,10 @@ nav a:hover{
 .track-fav i {
   font-size: 1rem;
   margin: 0 6px;
+  color: #a3a3a3;
+}
+.track-fav i:hover {
+  color: white;
 }
 
 .play {
@@ -329,6 +356,10 @@ nav a:hover{
 .play i {
   font-size: 1.1rem;
   margin: 0 15px 15px;
+  color: #a3a3a3;
+}
+.play i:hover {
+  color: white;
 }
 
 .play-controls {
@@ -339,7 +370,9 @@ nav a:hover{
 .play-controls>i.far.fa-play-circle {
   font-size: 2rem;
 }
-
+.play-controls>i.far.fa-play-circle:hover{
+  transform: scale(1.1);
+}
 .timebar {
   flex-flow: row;
   align-items: center;
@@ -369,6 +402,10 @@ nav a:hover{
 .controls i {
   margin: 0 10px;
   font-size: 1rem;
+  color: #a3a3a3;
+}
+.controls i:hover {
+  color: white;
 }
 
 .controls .cursor {
