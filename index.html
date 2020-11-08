@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify clone</title>
     <link rel="stylesheet" href="assets/css/style.css">
-      <link rel="stylesheet" href="assets/css/12-bool.css">
+    <link rel="stylesheet" href="assets/css/12-bool.css">
+    <link rel="stylesheet" href="assets/css/media-query.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css">
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
@@ -23,7 +24,8 @@
         <!-- MAIN TOP -->
         <div class="main-top">
           <div class="logo">
-            <img src="assets/img/logo.svg" alt="">
+            <img class="large" src="assets/img/logo.svg" alt="">
+            <img class="small" src="assets/img/logo-small.svg" alt="">
           </div>
           <div class="home">
               <ul>
@@ -54,8 +56,12 @@
         <!-- MAIN BOTTOM -->
         <div class="main-bottom">
           <div class="sidebar-bottom">
-            <div class="installa"><a href=""><img src="assets/img/download.svg" alt=""><span>Installa app</span></a></div>
-            <div class="username"><a href="#"><img src="assets/img/profile.svg" alt=""><span>John Doe</span></a></div>
+            <div class="installa">
+              <a href=""><img src="assets/img/download.svg" alt=""><span>Installa app</span></a>
+            </div>
+            <div class="username">
+              <a href="#"><img src="assets/img/profile.svg" alt=""><span>John Doe</span></a>
+            </div>
           </div>
         </div>
         <!-- /MAIN BOTTOM -->
@@ -72,14 +78,14 @@
         <!-- /SUBSCRIBE BANNER -->
 
         <!-- NAV -->
-        <nav class="d-flex">
-          <a href="#"><span>IN EVIDENZA</span></a>
-          <a href="#"><span>PODCAST</span></a>
-          <a href="#"><span>CLASSIFICHE</span></a>
-          <a href="#"><span>GENERI E MOOD</span></a>
-          <a href="#"><span>NUOVE USCITE</span></a>
-          <a href="#"><span>SCOPRI</span></a>
-        </nav>
+          <nav class="d-flex">
+            <a href="#"><span>IN EVIDENZA</span></a>
+            <a href="#"><span>PODCAST</span></a>
+            <a href="#"><span>CLASSIFICHE</span></a>
+            <a href="#"><span>GENERI E MOOD</span></a>
+            <a href="#"><span>NUOVE USCITE</span></a>
+            <a href="#"><span>SCOPRI</span></a>
+          </nav>
         <!-- /NAV -->
 
         <!-- RECENTLY PLAYED SECTION -->
@@ -89,7 +95,7 @@
               <div class="col-lg-12">
                 <h2 class="recently-heading">Recently played</h2>
               </div>
-              <div class="col-lg-2 col-md-2">
+              <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                 <div class="item">
                   <div class="card">
                     <div class="overlay">
@@ -103,7 +109,7 @@
                     <p>Subtitle</p>
                 </div>
               </div>
-              <div class="col-lg-2 col-md-2">
+              <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                 <div class="item">
                   <div class="card">
                     <div class="overlay">
@@ -117,7 +123,7 @@
                   <p>Kyle Dixon & Michael Stein</p>
                 </div>
               </div>
-              <div class="col-lg-2 col-md-2">
+              <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                 <div class="item">
                   <div class="card">
                     <div class="overlay">
@@ -131,7 +137,7 @@
                   <p>Subtitle</p>
                 </div>
               </div>
-              <div class="col-lg-2 col-md-2">
+              <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                 <div class="item">
                   <div class="card">
                     <div class="overlay">
@@ -145,7 +151,7 @@
                   <p>Subtitle</p>
                 </div>
               </div>
-              <div class="col-lg-2 col-md-2">
+              <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                 <div class="item">
                   <div class="card">
                     <div class="overlay">
@@ -159,7 +165,7 @@
                   <p>Subtitle</p>
                 </div>
               </div>
-              <div class="col-lg-2 col-md-2">
+              <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                 <div class="item">
                   <div class="card">
                     <div class="overlay">
@@ -184,11 +190,11 @@
         <section class="created-for">
           <div class="container">
             <div class="row">
-              <div class="col-lg-12">
+              <div class="col-lg-12 col-md-12 col-sm-12">
                 <h2>Creato per John Doe</h2>
                 <p class="subtitle">Più ascolti, più accurati saranno i suggerimenti.</p>
               </div>
-              <div class="col-lg-2 col-md-3">
+              <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                 <div class="item">
                   <div class="card">
                     <div class="overlay">
@@ -201,7 +207,7 @@
                 <h4>Release Radar</h4>
                 </div>
               </div>
-              <div class="col-lg-2 col-md-3">
+              <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                 <div class="item">
                   <div class="card">
                     <div class="overlay">
@@ -224,11 +230,11 @@
         <section class="popular">
           <div class="container">
             <div class="row">
-              <div class="col-lg-12">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <h2>Artisti più popolari</h2>
                 <p class="subtitle">Più ascolti, più accurati saranno i suggerimenti.</p>
               </div>
-              <div class="col-lg-2 col-md-3">
+              <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                 <div class="item">
                   <div class="card">
                     <div class="overlay">
@@ -242,7 +248,7 @@
                   <p>Subtitle</p>
                 </div>
               </div>
-              <div class="col-lg-2 col-md-3">
+              <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                 <div class="item">
                   <div class="card">
                     <div class="overlay">
