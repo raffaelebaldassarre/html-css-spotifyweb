@@ -67,24 +67,31 @@ aside.main_menu {
   align-items: center;
 }
 .home {
-  position: relative;
   margin: 30px 0;
+  position: relative;
 }
 .home li a {
   padding-left: 20px;
   height: 45px;
 }
+.home li a:hover{
+  color: white;
+}
 .home li:hover{
   transform: scale(1);
 }
-/* .home li a span::after{
+.home li a::after{
   position: absolute;
   content: '';
   height: 35px;
   left: 0;
   bottom:0;
   border-left: 3px solid #adff2f;
-} */
+  visibility: hidden;
+}
+.home li a:hover::after{
+  visibility: visible;
+}
 .home span {
   margin-left: 10px;
 }
@@ -201,6 +208,7 @@ aside.main_menu {
 .covers_section nav{
   justify-content: center;
 }
+/* NAV */
 nav a {
   margin: 25px 15px;
   color: #a3a3a3;
@@ -224,6 +232,7 @@ nav a span::after{
 nav a span:hover::after{
   visibility: visible;
 }
+/* /NAV */
 
 }
 /* RECENTLY PLAYED SECTION */
