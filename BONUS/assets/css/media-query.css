@@ -1,0 +1,106 @@
+@media screen and (min-width:0) and (max-width: 1200px) {
+  nav {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 576px){
+  aside.main_menu {
+    min-width: 50px;
+    width: 50px;
+  }
+  .covers_section {
+    width: calc(100% - 50px);
+  }
+  .subscribe_banner {
+    width: calc(100% - 50px);
+    height: 80px;
+  }
+  .playlist{
+    display: none;
+  }
+  .home li a span{
+    display: none;
+  }
+  .logo img.large{
+    display: none;
+  }
+  .logo img.small{
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
+  .sidebar-bottom span{
+    display: none;
+  }
+  .username{
+    border-top: none;
+  }
+  #site_content{
+    height: calc(100% - 80px);
+  }
+  #site_footer {
+    height: 80px;
+  }
+  .player {
+    justify-content: space-around;
+  }
+  .track-cover img {
+    height: 25px;
+  }
+  .track-title{
+    font-size: 0.6rem;
+  }
+  .track-fav{
+    flex-direction: column;
+  }
+  .play{
+    width:50%;
+  }
+  .play i {
+    font-size: 0.8rem;
+    margin: 0 15px 10px;
+  }
+  .play-controls>i.far.fa-play-circle {
+    font-size: 1.7rem;
+  }
+  .timebar span{
+    font-size: 0.6rem;
+  }
+  .timebar .cursor {
+    margin: 0 10px;
+  }
+  .controls {
+    margin-left:5px;
+  }
+  .controls i {
+    margin: 0 2px;
+    font-size: 0.8rem;
+  }
+  .controls .cursor {
+    width: 60px;
+  }
+  .controls .cursor-overlay {
+    width: 15px;
+  }
+  .main-bottom{
+    padding: 0;
+  }
+  .installa img{
+    margin-right: 0;
+    margin-left: 17.5px;
+  }
+  .username img{
+    margin-right: 0;
+    margin-left: 12.5px;
+  }
+  .home li a{
+    padding-left: 10px;
+  }
+  .home ul li:first-child{
+    margin-top: -30px;
+  }
+  .logo{
+    padding: 5px 10px;
+  }
+}
