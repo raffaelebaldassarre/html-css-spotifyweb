@@ -2,9 +2,12 @@
   nav {
     flex-wrap: wrap;
   }
+  .item{
+    height: 250px;
+  }
 }
 
-@media (max-width: 576px){
+@media (max-width: 639px){
   aside.main_menu {
     min-width: 50px;
     width: 50px;
@@ -32,6 +35,9 @@
   }
   .sidebar-bottom span{
     display: none;
+  }
+  .item{
+    height: 230px;
   }
   .username{
     border-top: none;
