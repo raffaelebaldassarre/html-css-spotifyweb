@@ -22,7 +22,6 @@ a {
 }
 
 /* /UTILITY CLASSES */
-
 body {
   background-color: #333;
   color: white;
@@ -40,16 +39,14 @@ body {
 }
 
 /* SIDEBAR */
-aside.main_menu {
+.main_menu {
   min-width: 250px;
   width: 250px;
+  height: 100%;
   background-color: #000000;
   flex-direction: column;
-  justify-content: space-between;
-}
-.main_menu{
-  overflow-y: auto;
-  overflow-x: hidden;
+  justify-content: flex-start;
+  overflow: hidden;
 }
 .logo {
   padding: 20px 0 0 20px;
@@ -61,13 +58,16 @@ aside.main_menu {
 .logo > img {
   width: 70%;
 }
-.main-top a, .main-bottom a {
+.main-top{
+  height: 90%;
+}
+.main_menu a{
   width: fit-content;
 }
-.main-top li img {
+.main_menu li img {
   width: 30px;
 }
-.main-top li a {
+.main_menu li a {
   color: #a3a3a3;
   display: flex;
   align-items: center;
@@ -108,35 +108,40 @@ aside.main_menu {
   font-size: 1.0rem;
   font-weight: 600;
   margin-bottom: 15px;
-  margin-left: 20px;
 }
-.crea-playlist, .nome-playlist {
+.playlist{
   margin-left: 20px;
+  height: 45%;
 }
-.crea-playlist .fas {
+.playlist ul{
+  overflow: scroll;
+  height: 80%;
+}
+.playlist .fas {
   font-size: 40px;
   color: #a3a3a3;
 }
-.crea-playlist a {
+.playlist a {
   display: flex;
   align-items: center;
 }
-.crea-playlist a:hover .fas, .crea-playlist a:hover span {
+.playlist a:hover .fas, .playlist a:hover span {
   color: white;
 }
-.crea-playlist span {
+.playlist span {
   color: #a3a3a3;
   margin-left: 10px;
   font-size: 1rem;
 }
-.nome-playlist ul li {
+.playlist ul li {
   margin: 20px 0;
 }
-.nome-playlist li a:hover {
+.playlist li a:hover {
   color: white;
 }
-.main-bottom {
-  padding: 20px 20px 0;
+.sidebar-bottom {
+  height: 10%;
+  padding: 0 20px;
 }
 .installa a {
   display: flex;
@@ -317,6 +322,7 @@ nav a span:hover::after{
 
 /* FOOTER */
 #site_footer {
+  z-index: 1;
   background-color: #282828;
   height: 100px;
 }
