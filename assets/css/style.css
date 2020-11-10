@@ -316,6 +316,10 @@ nav a span:hover::after{
   background-color: #282828;
   height: 100px;
 }
+.covers_section h4:hover , .covers_section p:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
 .player {
   justify-content: space-between;
   align-items: center;
@@ -427,7 +431,7 @@ nav a span:hover::after{
   background-color: gray;
   height: 5px;
   border-radius: 10px;
-  margin: 0 20px 0 5px;
+  margin: 0 10px 0 5px;
 }
 .controls .cursor-overlay {
   width: 25%;

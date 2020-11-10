@@ -22,8 +22,17 @@
   .playlist{
     display: none;
   }
+  .home li a{
+    padding-left: 10px;
+  }
+  .home ul li:first-child{
+    margin-top: -30px;
+  }
   .home li a span{
     display: none;
+  }
+  .logo{
+    padding: 5px 10px;
   }
   .logo img.large{
     display: none;
@@ -33,11 +42,22 @@
     width: 30px;
     height: 30px;
   }
+  .main-bottom{
+    padding: 0;
+  }
+  .installa img{
+    margin-right: 0;
+    margin-left: 17.5px;
+  }
+  .username img{
+    margin-right: 0;
+    margin-left: 12.5px;
+  }
   .sidebar-bottom span{
     display: none;
   }
   .item{
-    height: 230px;
+    height: 280px;
   }
   .username{
     border-top: none;
@@ -48,8 +68,8 @@
   #site_footer {
     height: 80px;
   }
-  .player {
-    justify-content: space-around;
+  .track{
+    justify-content: flex-start;
   }
   .track-cover img {
     height: 25px;
@@ -59,6 +79,7 @@
   }
   .track-fav{
     flex-direction: column;
+    margin:0 30px;
   }
   .play{
     width:50%;
@@ -82,31 +103,5 @@
   .controls i {
     margin: 0 2px;
     font-size: 0.8rem;
-  }
-  .controls .cursor {
-    width: 60px;
-  }
-  .controls .cursor-overlay {
-    width: 15px;
-  }
-  .main-bottom{
-    padding: 0;
-  }
-  .installa img{
-    margin-right: 0;
-    margin-left: 17.5px;
-  }
-  .username img{
-    margin-right: 0;
-    margin-left: 12.5px;
-  }
-  .home li a{
-    padding-left: 10px;
-  }
-  .home ul li:first-child{
-    margin-top: -30px;
-  }
-  .logo{
-    padding: 5px 10px;
   }
 }
