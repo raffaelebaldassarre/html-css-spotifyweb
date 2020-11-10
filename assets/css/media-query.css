@@ -116,4 +116,7 @@
   nav{
     margin-top: 80px;
   }
+  .sidebar-bottom{
+    display: none;
+  }
 }

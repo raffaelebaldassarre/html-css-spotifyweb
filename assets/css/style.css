@@ -60,6 +60,7 @@ body {
 }
 .main-top{
   height: 90%;
+  overflow-y: hidden;
 }
 .main_menu a{
   width: fit-content;
