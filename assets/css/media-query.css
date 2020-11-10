@@ -105,3 +105,14 @@
     font-size: 0.8rem;
   }
 }
+@media (max-width: 639px) and (max-height: 350px) {
+  .subscribe_banner, .subscribe{
+    display: none;
+  }
+  .covers_section{
+    padding-top: 0;
+  }
+  nav{
+    margin-top: 80px;
+  }
+}
