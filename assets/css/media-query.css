@@ -116,6 +116,8 @@
   nav{
     margin-top: 80px;
   }
+}
+@media(max-height: 360px) {
   .sidebar-bottom{
     display: none;
   }
