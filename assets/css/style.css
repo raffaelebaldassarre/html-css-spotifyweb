@@ -112,10 +112,10 @@ body {
 }
 .playlist{
   margin-left: 20px;
-  height: 45%;
+  height: 55%;
 }
 .playlist ul{
-  overflow: scroll;
+  overflow-y: scroll;
   height: 80%;
 }
 .playlist .fas {
